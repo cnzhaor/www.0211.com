@@ -1,0 +1,82 @@
+<?php
+namespace Admin\Model;
+use Think\Model;
+class CategoryModel extends Model 
+{
+	protected $insertFields = array('parent_id','cat_name');
+	protected $updateFields = array('id','parent_id','cat_name');
+	protected $_validate = array(
+		array('cat_name', 'require', '分类名称不能为空！', 1, 'regex', 3),
+	);
+	/**
+	 * 递归方法从数据中找出子分类,找一个分类下的所有子分类的id
+	 */
+	public function getChildren($catId)
+	{
+		//取出所有的分类
+		$data = $this->select();
+		//递归从所有的分类中挑出子分类的id
+		return $this->_getChildren($data , $catId , TRUE);
+	}
+	
+	private function _getChildren($data , $catId , $isClear = FALSE)
+	{
+		//保存取到的子分类的id的静态变量
+		static $_ret = array();
+		//开始调用时,清空$_ret变量
+		if($isClear == TRUE)
+			$_ret = array();
+		//循环所有的分类找子分类
+		foreach ($data as $k=>$v)
+		{
+			if($v['parent_id'] == $catId)
+			{
+				$_ret[] = $v['id'];
+				//递归调用函数再找的$v的子分类
+				$this->_getChildren($data , $v['id']);
+			}
+		}
+		return $_ret;
+	}
+	
+	/**
+	 * 递归获取分类数据树形结构
+	 */
+	public function getTree()
+	{
+		//取出所有的分类
+		$data = $this->select();
+		//递归得到树形结构
+		return $this->_getTree($data);
+	}
+	private function _getTree($data , $parent_id = 0 , $level=0)//从顶级分类开始取数
+	{
+		//保存树形数据
+		static $_ret = array();
+		//循环所有的分类
+		foreach ($data as $k=>$v)
+		{
+			if($v['parent_id'] == $parent_id)
+			{
+				//为$v丰富一个level,用来存放级别
+				$v['level'] = $level;
+				$_ret[] = $v;
+				//递归调用函数再找的$v的子分类
+				$this->_getTree($data , $v['id'] ,$level+1);
+			}
+		}
+		return $_ret;
+	}
+	public function _before_delete(&$option) 	
+	{
+		//取出要删除的分类所有子分类id
+		$children = $this->getChildren($option['where']['id']);
+		//将要删除的分类id丰富到$children中
+		$children[] = $option['where']['id'];
+		//按照格式修改$option['where']['id']
+		$option['where']['id'] = array(
+			0=>'IN',
+			1=>implode(',' , $children)
+		);
+	}
+}

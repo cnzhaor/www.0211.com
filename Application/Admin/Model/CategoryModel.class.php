@@ -1,0 +1,275 @@
+<?php
+namespace Admin\Model;
+use Think\Model;
+class CategoryModel extends Model 
+{
+	protected $insertFields = array('parent_id','cat_name','is_floor');
+	protected $updateFields = array('id','parent_id','cat_name','is_floor');
+	protected $_validate = array(
+		array('cat_name', 'require', '分类名称不能为空！', 1, 'regex', 3),
+	);
+	/**
+	 * 根据当前商品来计算筛选条件
+	 *
+	 * @param unknown_type $catId
+	 */
+	public function getSearchConditionByGoodsId($goodsId){
+		$ret = array();
+		//分类下所有商品ID
+		$goodsModel = D('Admin/goods');
+		//$goodsId = $goodsModel->getGoodsIdByCatId($catId);
+		/*********************品牌**********************/
+		$ret['brand'] = $goodsModel->alias('a')
+		->field('DISTINCT brand_id,b.brand_name,b.logo')
+		->join('LEFT JOIN __BRAND__ b ON a.brand_id=b.id ')
+		->where(array(
+			'a.id' => array('in' , $goodsId),
+		))
+		->select();
+		/*********************价格区间**********************/
+		//取出这个分类下最大价格,最小价格
+		$priceInfo = $goodsModel->field('MAX(shop_price) max_price , MIN(shop_price) min_price')
+		->where(array(
+			'id' => array('in' , $goodsId)
+		))->find();
+		//最大价最小价的区间
+		$priceSection = $priceInfo['max_price'] - $priceInfo['min_price'];
+		//分类下商品的数量
+		$goodsCount = count($goodsId);
+		$ret['goodsCount'] = $goodsCount;
+		//默认分6段
+		$sectionCount = 6;
+		if($goodsCount >1){
+			if($priceSection < 100)
+				$sectionCount = 2;
+			elseif($priceSection < 1000)
+				$sectionCount = 4;
+			elseif($priceSection < 10000)
+				$sectionCount = 6;
+			else 
+				$sectionCount = 7;
+			//每段的大小
+			$pricePersection = ceil($priceInfo['max_price'] / $sectionCount);
+			$price = array();
+			$firstPrice = 0;
+			for($i=0 ; $i<$sectionCount ; $i++){
+				//每段结束的价格
+				$_tmpEnd = $firstPrice + $pricePersection;
+				$_tmpEnd = ceil($_tmpEnd/100)*100-1;
+				$price[] = $firstPrice.'-'.$_tmpEnd;
+				//下一段开始价格
+				$firstPrice = $_tmpEnd+1;
+			}
+			$ret['price'] = $price;
+		}
+		/*********************属性**********************/
+		$gaModel = D('goods_attr');
+		$gaData = $gaModel->alias('a')
+		->field('DISTINCT a.attr_id,a.attr_value,b.attr_name')
+		->join('LEFT JOIN __ATTRIBUTE__ b ON a.attr_id=b.id')
+		->where(array(
+			'a.goods_id' => array('in' , $goodsId)
+		))
+		->select();
+		//二维转三维
+		$_gaData = array();
+		foreach ($gaData as $k=>$v){
+			$_gaData[$v['attr_name']][] = $v;
+		}
+		$ret['gaData']=$_gaData;
+		
+		return $ret;
+	}
+	/**
+	 * 根据主分类取上级分类,递归
+	 * 
+	 * */
+	public function parentPath($catId){
+		static $ret = array();
+		//取出当前主分类数据
+		$info = $this->field('id,parent_id,cat_name')->find($catId);
+		$ret[] = $info;
+		//上级分类
+		if($info['parent_id'] > 0)
+			$this->parentPath($info['parent_id']);
+		return $ret;
+	}
+	
+	/**
+	 * 获取前台首页楼层数据
+	 * 使用S()缓存之前先进行调试
+	 * */
+	public function getFloorData(){
+		$floorData = S('floorData');
+		if(!$floorData){
+			//取出被推荐楼层的顶级分类
+			$ret = $this->where(array(
+				'parent_id'=>array('eq' , 0),
+				'is_floor' =>array('eq' , '是')
+			))->select();
+			//取出顶级分类下的二级分类(推荐,未推荐)和被推荐楼层的商品
+			$goodsModel = D('Admin/goods');
+			foreach ($ret as $k=>$v){
+				//取出顶级分类下所有品牌
+				$goodsId = $goodsModel->getGoodsIdByCatId($v['id']);
+				$goodsId = implode(',',$goodsId);
+				$ret[$k]['brand'] = $goodsModel->alias('a')
+				->join('LEFT JOIN __BRAND__ b ON a.brand_id=b.id')
+				->field('DISTINCT brand_name,b.logo,brand_id')
+				->where(array(
+					'a.id' => array('in' , $goodsId),
+					'brand_id' => array('neq' , 0)
+				))
+				->limit(9)->select();
+				//未推荐楼层的二级分类
+				$ret[$k]['subCat'] = $this->where(array(
+					'parent_id' => array('eq' , $v['id']),
+					'is_floor' => array('eq' , '否')
+				))->select();
+				//推荐楼层的二级分类
+				$ret[$k]['recSubCat'] = $this->where(array(
+					'parent_id' => array('eq' , $v['id']),
+					'is_floor' => array('eq' , '是')
+				))->select();
+				//推荐楼层的二级分类下的8件推荐商品
+				foreach ($ret[$k]['recSubCat'] as $k1 =>&$v1){
+					$gids = $goodsModel->getGoodsIdByCatId($v1['id']);
+					$gids = implode(',',$gids);
+					$v1['goods'] = $goodsModel
+					->field('id,mid_logo,goods_name,shop_price')
+					->where(array(
+						'is_on_sale' => array('eq' , '是'),
+						'is_floor' 	 => array('eq' , '是'),
+						'id'   => array('in' , $gids),
+					))->order('sort_num')
+					->limit(8)->select();
+				}
+			}
+			S('floorData' , $ret , 86400);
+			return $ret;
+		}
+		else 
+			return $floorData;
+	}
+	
+	/**
+	 * 获取导航条上的分类数据
+	 * 
+	 */
+	public function getNavData()
+	{
+		//取缓存数据
+		$catData = S('catData');	
+		if(!$catData)
+		{
+			//取出所有分类
+			$all = $this->select();
+			$ret = array();
+			//循环所有分类
+			foreach ($all as $k=>$v)
+			{	
+				//找出顶级分类
+				if($v['parent_id'] == 0 )
+				{
+					//循环所有分类
+					foreach ($all as $k1=>$v1)
+					{
+						//找出顶级分类的子分类(二级分类)
+						if($v1['parent_id'] == $v['id'])
+						{
+							//循环所有分类
+							foreach ($all as $k2=>$v2)
+							{
+								//找出二级级分类的子分类(三级分类)
+								if($v2['parent_id'] == $v1['id'])
+								{
+									$v1['children'][] = $v2;
+								}
+							}
+							$v['children'][]=$v1;
+						}
+					}
+					$ret[] = $v;
+				}
+			}
+			//先将分类数组缓存一天,Runtime/Temp
+			S('catData' , $ret , 86400);
+			//再返回
+			return $ret;
+		}
+		else
+			return $catData;
+	}
+	
+	/**
+	 * 递归方法从数据中找出子分类,找一个分类下的所有子分类的id
+	 */
+	public function getChildren($catId)
+	{
+		//取出所有的分类
+		$data = $this->select();
+		//递归从所有的分类中挑出子分类的id
+		return $this->_getChildren($data , $catId , TRUE);
+	}
+	
+	private function _getChildren($data , $catId , $isClear = FALSE)
+	{
+		//保存取到的子分类的id的静态变量
+		static $_ret = array();
+		//开始调用时,清空$_ret变量
+		if($isClear == TRUE)
+			$_ret = array();
+		//循环所有的分类找子分类
+		foreach ($data as $k=>$v)
+		{
+			if($v['parent_id'] == $catId)
+			{
+				$_ret[] = $v['id'];
+				//递归调用函数再找的$v的子分类
+				$this->_getChildren($data , $v['id']);
+			}
+		}
+		return $_ret;
+	}
+	
+	/**
+	 * 递归获取分类数据树形结构
+	 */
+	public function getTree()
+	{
+		//取出所有的分类
+		$data = $this->select();
+		//递归得到树形结构
+		return $this->_getTree($data);
+	}
+	private function _getTree($data , $parent_id = 0 , $level=0)//从顶级分类开始取数
+	{
+		//保存树形数据
+		static $_ret = array();
+		//循环所有的分类
+		foreach ($data as $k=>$v)
+		{
+			if($v['parent_id'] == $parent_id)
+			{
+				//为$v丰富一个level,用来存放级别
+				$v['level'] = $level;
+				$_ret[] = $v;
+				//递归调用函数再找的$v的子分类
+				$this->_getTree($data , $v['id'] ,$level+1);
+			}
+		}
+		return $_ret;
+	}
+	public function _before_delete(&$option) 	
+	{
+		//取出要删除的分类所有子分类id
+		$children = $this->getChildren($option['where']['id']);
+		//将要删除的分类id丰富到$children中
+		$children[] = $option['where']['id'];
+		//按照格式修改$option['where']['id']
+		$option['where']['id'] = array(
+			0=>'IN',
+			1=>implode(',' , $children)
+		);
+	}
+}

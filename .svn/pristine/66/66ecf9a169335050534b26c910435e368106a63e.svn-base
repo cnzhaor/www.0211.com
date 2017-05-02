@@ -1,0 +1,103 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class GoodsController extends Controller 
+{
+	//显示和处理表单
+	public function add()
+	{
+		//判断用户是否提交
+		if(IS_POST)	
+		{
+			//实例化模型
+			$model = D('goods');
+			//调用create()方法,使用I函数过滤表单,1代表添加数据
+			if($model->create(I('post.') ,1))
+			{
+				if($model->add())
+				{
+					//显示成功信息,等待1秒跳转		
+					$this->success('操作成功!' , U('lst'));
+					exit;
+				}
+			}
+			//此处代表上传失败
+			//从模板中获取失败原因
+			$error = $model->getError();
+			//控制器显示错误信息,3秒跳回前一页
+			$this->error($error);
+		}	
+		
+		//取出所有会员级别
+		$mlModel = D('member_level');
+		$mlData = $mlModel->select();
+		//设置页面\信息
+		$this -> assign(array(
+			'mlData'=>$mlData,
+			'_page_title'=>'添加商品',
+			'_page_btn_name'=>'商品列表',
+			'_page_btn_link'=>U('lst')
+		));
+		//显示表单
+		$this->display();
+	}
+	//删除
+	public function delete()
+	{
+		$model = D('goods');
+		if(FALSE !== $model->delete(I('get.id')))
+			$this->success('删除成功!' , U('lst'));
+		else 
+			$this->error('删除失败!原因:' . $model->getError());
+	}
+	//修改
+	public function edit()
+	{
+		//获取要修改的商品ID
+		$id = I('get.id');
+		$model = D('goods');
+		if(IS_POST)	
+		{			
+			//调用create()方法,使用I函数过滤表单,2代表修改数据
+			if($model->create(I('post.') ,2))
+			{
+				if(FALSE !== $model->save())//save()返回值,成功返回受影响的条数[没改返回0],失败返回false
+				{
+					$this->success('操作成功!' , U('lst'));
+					exit;
+				}
+			}
+			$error = $model->getError();
+			$this->error($error);
+		}	
+		//根据ID获取要修改的原信息
+		$data = $model -> find($id);
+		$this -> assign('data' , $data);
+		
+		
+		//设置页面布局信息
+		$this -> assign(array(
+			'_page_title'=>'修改商品',
+			'_page_btn_name'=>'商品列表',
+			'_page_btn_link'=>U('lst')
+		));
+		$this->display();
+	}
+	//商品列表
+	public function lst()
+	{
+		//实例化模型
+		$model = D('goods');
+		//返回数据和翻页
+		$data = $model -> search();
+		$this -> assign($data);
+		//设置页面布局信息
+		$this -> assign(array(
+			'_page_title'=>'商品列表',
+			'_page_btn_name'=>'添加商品',
+			'_page_btn_link'=>U('add')
+		));
+		//展示
+		$this ->display();
+	}
+}

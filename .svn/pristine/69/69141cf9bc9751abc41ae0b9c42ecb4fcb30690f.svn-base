@@ -1,0 +1,67 @@
+<layout name="layout" />
+<div class="main-div">
+    <form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data">
+        <table cellspacing="1" cellpadding="3" width="100%">
+            <tr>
+                <td class="label">角色名称：</td>
+                <td>
+                    <input  type="text" name="role_name" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">权限列表：</td>
+                <td>
+                	<?php foreach ($priData as $k=>$v):?>
+                		<?php echo str_repeat('-' , 8*$v['level']);?>
+                		<input level_id="<?php echo $v['level'];?>" type="checkbox" name="pri_id[]" value="<?php echo $v['id'];?>"/>
+                		<?php echo $v['pri_name'];?><br>
+                	<?php endforeach;?>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="99" align="center">
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+<script>
+//为所有复选框绑定点击事件
+$(':checkbox').click(function(){
+	//获得当前点击的level_id
+	var tmp_level_id = level_id = $(this).attr('level_id');
+	//判断是选中还在取消
+	if($(this).prop('checked'))
+	{
+		//选中子权限
+		$(this).nextAll(':checkbox').each(function(k,v){
+			if($(v).attr('level_id') > level_id)
+				$(v).prop('checked','checked');
+			else
+				return false;
+		});
+		//选中上级权限
+		$(this).prevAll(':checkbox').each(function(k,v){
+			if($(v).attr('level_id') < tmp_level_id)
+			{
+				$(v).prop('checked' , 'checked');
+				tmp_level_id--;
+			}
+		});
+	}
+	else
+	{
+		//取消选中子权限
+		$(this).nextAll(':checkbox').each(function(k,v){
+			if($(v).attr('level_id') > level_id)
+				$(v).removeAttr('checked');
+			else
+				return false;
+		});
+	}
+});
+</script>

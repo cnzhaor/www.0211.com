@@ -1,0 +1,833 @@
+[ 2017-02-27T22:40:22+08:00 ] 127.0.0.1 /index.php/Admin/Index/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-02-27T22:40:22+08:00 ] 127.0.0.1 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001812s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2017-02-27T22:40:22+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001853s ]
+
+[ 2017-02-27T22:40:22+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001970s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001834s ]
+
+[ 2017-02-27T22:40:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/Images/menu_minus.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001744s ]
+
+[ 2017-02-27T22:40:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/Images/menu_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+
+[ 2017-02-27T22:40:27+08:00 ] 127.0.0.1 /index.php/Admin/goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001400s ]
+
+[ 2017-02-27T22:40:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant goods_id - assumed 'goods_id' E:\amp\www\www.0211.com\Application\Admin\Controller\GoodsController.class.php 第 99 行.
+SQL: SELECT `cat_id` FROM `s11_goods_cat` WHERE `goods_id` = '40'  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_goods` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_member_price` WHERE `goods_id` = '40'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`mid_pic` FROM `s11_goods_pic` WHERE `goods_id` = '40'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: 1 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 2 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 3 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 4 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2017-02-27T22:40:41+08:00 ] 127.0.0.1 /index.php/Admin/goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2017-02-27T22:40:43+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant goods_id - assumed 'goods_id' E:\amp\www\www.0211.com\Application\Admin\Controller\GoodsController.class.php 第 99 行.
+SQL: SELECT `cat_id` FROM `s11_goods_cat` WHERE `goods_id` = '40'  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_goods` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `s11_member_price` WHERE `goods_id` = '40'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_pic` FROM `s11_goods_pic` WHERE `goods_id` = '40'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: 1 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 2 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 3 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 4 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001201s ]
+
+[ 2017-02-27T22:40:46+08:00 ] 127.0.0.1 /index.php/Admin/goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001814s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2017-02-27T22:40:49+08:00 ] 127.0.0.1 /index.php/Admin/goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2017-02-27T22:40:51+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant goods_id - assumed 'goods_id' E:\amp\www\www.0211.com\Application\Admin\Controller\GoodsController.class.php 第 99 行.
+SQL: SELECT `cat_id` FROM `s11_goods_cat` WHERE `goods_id` = '38'  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `s11_goods` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_member_price` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`mid_pic` FROM `s11_goods_pic` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: 1 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 2 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 3 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 4 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2017-02-27T22:45:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/Images/menu_plus.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+
+[ 2017-02-27T22:45:28+08:00 ] 127.0.0.1 /index.php/Admin/goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004290s ]
+
+[ 2017-02-27T22:45:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant goods_id - assumed 'goods_id' E:\amp\www\www.0211.com\Application\Admin\Controller\GoodsController.class.php 第 99 行.
+SQL: SELECT `cat_id` FROM `s11_goods_cat` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `s11_goods` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_member_price` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`mid_pic` FROM `s11_goods_pic` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: 1 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 2 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 3 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 4 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001358s ]
+
+[ 2017-02-27T22:46:55+08:00 ] 127.0.0.1 /index.php/Admin/goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001377s ]
+
+[ 2017-02-27T22:46:57+08:00 ] 127.0.0.1 /index.php/Admin/goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2017-02-27T22:46:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant goods_id - assumed 'goods_id' E:\amp\www\www.0211.com\Application\Admin\Controller\GoodsController.class.php 第 99 行.
+SQL: SELECT `cat_id` FROM `s11_goods_cat` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `s11_goods` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `s11_member_price` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_pic` FROM `s11_goods_pic` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: 1 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 2 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 3 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 4 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2017-02-27T22:48:52+08:00 ] 127.0.0.1 /index.php/Admin/goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001611s ]
+
+[ 2017-02-27T22:48:54+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant goods_id - assumed 'goods_id' E:\amp\www\www.0211.com\Application\Admin\Controller\GoodsController.class.php 第 99 行.
+SQL: SELECT `cat_id` FROM `s11_goods_cat` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_goods` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `s11_member_price` WHERE `goods_id` = '38'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`mid_pic` FROM `s11_goods_pic` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: 1 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 2 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 3 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 4 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001157s ]
+
+[ 2017-02-27T22:53:20+08:00 ] 127.0.0.1 /index.php/Admin/goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001295s ]
+
+[ 2017-02-27T22:53:21+08:00 ] 127.0.0.1 /index.php/Admin/goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001417s ]
+
+[ 2017-02-27T22:53:21+08:00 ] 127.0.0.1 /index.php/Admin/goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002228s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003545s ]
+
+[ 2017-02-27T22:53:27+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant goods_id - assumed 'goods_id' E:\amp\www\www.0211.com\Application\Admin\Controller\GoodsController.class.php 第 99 行.
+SQL: SELECT `cat_id` FROM `s11_goods_cat` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_goods` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_member_price` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`mid_pic` FROM `s11_goods_pic` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: 1 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 2 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 3 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 4 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2017-02-27T22:54:05+08:00 ] 127.0.0.1 /index.php/Admin/goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2017-02-27T22:54:07+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant goods_id - assumed 'goods_id' E:\amp\www\www.0211.com\Application\Admin\Controller\GoodsController.class.php 第 99 行.
+SQL: SELECT `cat_id` FROM `s11_goods_cat` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `s11_goods` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_member_price` WHERE `goods_id` = '38'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`mid_pic` FROM `s11_goods_pic` WHERE `goods_id` = '38'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: 1 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 2 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 3 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+NOTIC: [8] Undefined index: 4 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2017-02-27T22:54:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0006s ]
+SQL: DELETE FROM `s11_goods_cat` WHERE `goods_id` = 38 [ RunTime:0.0927s ]
+SQL: INSERT INTO `s11_goods_cat` (`cat_id`,`goods_id`) VALUES ('23','38') [ RunTime:0.0824s ]
+SQL: INSERT INTO `s11_goods_cat` (`cat_id`,`goods_id`) VALUES ('16','38') [ RunTime:0.0277s ]
+SQL: INSERT INTO `s11_goods_cat` (`cat_id`,`goods_id`) VALUES ('22','38') [ RunTime:0.0381s ]
+SQL: UPDATE `s11_goods` SET `cat_id`='1',`brand_id`='1',`goods_name`='测试扩展分类',`market_price`='0.00',`shop_price`='0.00',`is_on_sale`='是',`goods_desc`='',`edittime`='2017-02-27 22:54:38' WHERE `id` = 38 [ RunTime:0.0416s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0008s ]
+SQL: DELETE FROM `s11_member_price` WHERE `goods_id` = 38 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001055s ]
+
+[ 2017-02-27T22:54:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001644s ]
+

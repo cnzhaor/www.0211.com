@@ -1,0 +1,1782 @@
+[ 2017-03-26T22:07:22+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`promote_price` FROM `s11_goods` WHERE `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:07:22' AND `promote_end_date` >= '2017-03-26 22:07:22' AND `is_on_sale` = '是' LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `s11_goods` WHERE `is_new` = '是' AND `is_on_sale` = '是' ORDER BY sort_num LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `s11_goods` WHERE `is_hot` = '是' AND `is_on_sale` = '是' ORDER BY sort_num LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `s11_goods` WHERE `is_best` = '是' AND `is_on_sale` = '是' ORDER BY sort_num LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_category` WHERE `parent_id` = 0 AND `is_floor` = '是'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `s11_goods` WHERE `cat_id` IN ('16','22','17','18','20','1')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0008s ]
+SQL: SELECT DISTINCT goods_id id FROM `s11_goods_cat` WHERE `cat_id` IN ('16','22','17','18','20','1')  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT brand_name,b.logo,`brand_id` FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id  WHERE a.id IN ('2','3','37','38','52','53') AND `brand_id` <> 0 LIMIT 9   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_category` WHERE `parent_id` = '1' AND `is_floor` = '否'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_category` WHERE `parent_id` = '1' AND `is_floor` = '是'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `s11_goods` WHERE `cat_id` IN ('22','16')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `s11_goods_cat` WHERE `cat_id` IN ('22','16')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `s11_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('2','37','38','52','53') ORDER BY sort_num LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `s11_goods` WHERE `cat_id` IN ('17')  [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT goods_id id FROM `s11_goods_cat` WHERE `cat_id` IN ('17')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `s11_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('2') ORDER BY sort_num LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `s11_goods` WHERE `cat_id` IN ('20')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `s11_goods_cat` WHERE `cat_id` IN ('20')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `s11_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('3','37') ORDER BY sort_num LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `s11_goods` WHERE `cat_id` IN ('21','2')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `s11_goods_cat` WHERE `cat_id` IN ('21','2')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT brand_name,b.logo,`brand_id` FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id  WHERE a.id IN ('1','54') AND `brand_id` <> 0 LIMIT 9   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_category` WHERE `parent_id` = '2' AND `is_floor` = '否'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_category` WHERE `parent_id` = '2' AND `is_floor` = '是'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `s11_goods` WHERE `cat_id` IN ('21')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `s11_goods_cat` WHERE `cat_id` IN ('21')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `s11_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('1') ORDER BY sort_num LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2017-03-26T22:07:22+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+
+[ 2017-03-26T22:07:24+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxGetCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2017-03-26T22:07:26+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxGetCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0011s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001306s ]
+
+[ 2017-03-26T22:07:31+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxGetCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2017-03-26T22:07:33+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxGetCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001589s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0013s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002554s ]
+
+[ 2017-03-26T22:07:40+08:00 ] 127.0.0.1 /index.php/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2017-03-26T22:07:40+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001721s ]
+
+[ 2017-03-26T22:07:40+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+
+[ 2017-03-26T22:07:46+08:00 ] 127.0.0.1 /index.php/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `s11_member` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `s11_member` WHERE `username` = 'jack' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `s11_member_level` WHERE `jifen_bottom` <= '10000' AND `jifen_top` >= '10000' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+
+[ 2017-03-26T22:07:48+08:00 ] 127.0.0.1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`promote_price` FROM `s11_goods` WHERE `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:07:48' AND `promote_end_date` >= '2017-03-26 22:07:48' AND `is_on_sale` = '是' LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `s11_goods` WHERE `is_new` = '是' AND `is_on_sale` = '是' ORDER BY sort_num LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `s11_goods` WHERE `is_hot` = '是' AND `is_on_sale` = '是' ORDER BY sort_num LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `s11_goods` WHERE `is_best` = '是' AND `is_on_sale` = '是' ORDER BY sort_num LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2017-03-26T22:07:48+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+
+[ 2017-03-26T22:07:49+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxGetCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2017-03-26T22:07:52+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxGetCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2017-03-26T22:10:46+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxGetCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0012s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2017-03-26T22:10:46+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxGetCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0015s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2017-03-26T22:10:48+08:00 ] 127.0.0.1 /index.php/Home/Index/goods/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`parent_id`,`cat_name` FROM `s11_category` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`parent_id`,`cat_name` FROM `s11_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsPicModel
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_goods_pic` WHERE `goods_id` = '2'  [ RunTime:0.0002s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0016s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM s11_goods_attr a LEFT JOIN s11_attribute b ON a.attr_id=b.id  WHERE `goods_id` = '2'  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0009s ]
+SQL: SELECT a.*,b.level_name FROM s11_member_price a LEFT JOIN s11_member_level b ON a.level_id=b.id  WHERE `goods_id` = '2'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 158 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009586s ]
+
+[ 2017-03-26T22:10:49+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2017-03-26T22:10:49+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetMemberPrice/goods_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0013s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:10:49' AND `promote_end_date` >= '2017-03-26 22:10:49' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0009s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2017-03-26T22:10:49+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+
+[ 2017-03-26T22:10:56+08:00 ] 127.0.0.1 /index.php/Home/Cart/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0010s ]
+NOTIC: [2] sort() expects parameter 1 to be array, string given E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 17 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 18 行.
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsNumberModel
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0006s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Indirect modification of overloaded property Home\Model\CartModel::$goods_attr_id has no effect E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 32 行.
+NOTIC: [2] sort() expects parameter 1 to be array, null given E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 32 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 33 行.
+SQL: SELECT `id` FROM `s11_cart` WHERE `member_id` = 1 AND `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `s11_cart` (`member_id`,`goods_id`,`goods_attr_id`,`goods_number`) VALUES ('1','2','','1') [ RunTime:0.1326s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000920s ]
+
+[ 2017-03-26T22:10:58+08:00 ] 127.0.0.1 /index.php/Home/Cart/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0005s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:10:58' AND `promote_end_date` >= '2017-03-26 22:10:58' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: gaData E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\ad731cb508cb3d23cea25bb6848941ce.php 第 66 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\ad731cb508cb3d23cea25bb6848941ce.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2017-03-26T22:10:58+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+
+[ 2017-03-26T22:11:09+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0005s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:11:09' AND `promote_end_date` >= '2017-03-26 22:11:09' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0005s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [8] Undefined variable: _page_keywords E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\585339be4d132c0afead7245d660e331.php 第 7 行.
+NOTIC: [8] Undefined variable: _page_description E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\585339be4d132c0afead7245d660e331.php 第 8 行.
+NOTIC: [8] Undefined index: gaData E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\585339be4d132c0afead7245d660e331.php 第 276 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\585339be4d132c0afead7245d660e331.php 第 276 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2017-03-26T22:11:10+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+
+[ 2017-03-26T22:11:26+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+
+[ 2017-03-26T22:11:28+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0005s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:11:28' AND `promote_end_date` >= '2017-03-26 22:11:28' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0005s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined variable: _page_keywords E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\585339be4d132c0afead7245d660e331.php 第 7 行.
+NOTIC: [8] Undefined variable: _page_description E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\585339be4d132c0afead7245d660e331.php 第 8 行.
+NOTIC: [8] Undefined index: gaData E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\585339be4d132c0afead7245d660e331.php 第 276 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\585339be4d132c0afead7245d660e331.php 第 276 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2017-03-26T22:11:29+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+
+[ 2017-03-26T22:11:35+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002398s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002081s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001599s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001668s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001553s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003033s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.080946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008095s ]
+
+[ 2017-03-26T22:24:21+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002223s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002470s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+
+[ 2017-03-26T22:26:00+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003441s ]
+
+[ 2017-03-26T22:27:53+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0012s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0012s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0008s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:53' AND `promote_end_date` >= '2017-03-26 22:27:53' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0008s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0008s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538473') [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.1587s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('4','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0006s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+
+[ 2017-03-26T22:27:53+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002049s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0091s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0010s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0006s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:53' AND `promote_end_date` >= '2017-03-26 22:27:53' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0005s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538473') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0014s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('5','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0003s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+
+[ 2017-03-26T22:27:53+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0006s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:53' AND `promote_end_date` >= '2017-03-26 22:27:53' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0006s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538473') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0014s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('6','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0003s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000629s ]
+
+[ 2017-03-26T22:27:53+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0014s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0006s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:53' AND `promote_end_date` >= '2017-03-26 22:27:53' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0007s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538473') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0014s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('7','2','','1','2788.00') [ RunTime:0.0004s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0005s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+
+[ 2017-03-26T22:27:54+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0015s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0012s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0009s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:54' AND `promote_end_date` >= '2017-03-26 22:27:54' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0008s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0006s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538474') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0006s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('8','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0004s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+
+[ 2017-03-26T22:27:54+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0020s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0011s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0007s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:54' AND `promote_end_date` >= '2017-03-26 22:27:54' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0005s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538474') [ RunTime:0.0168s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0018s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('9','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0003s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-03-26T22:27:54+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0018s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0007s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:54' AND `promote_end_date` >= '2017-03-26 22:27:54' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0008s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0008s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538474') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0013s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('10','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0004s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000638s ]
+
+[ 2017-03-26T22:27:54+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0014s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0012s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0010s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:54' AND `promote_end_date` >= '2017-03-26 22:27:54' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0008s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0008s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538474') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0015s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('11','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0004s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-03-26T22:27:54+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0006s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:54' AND `promote_end_date` >= '2017-03-26 22:27:54' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0006s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538474') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0013s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('12','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0006s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-03-26T22:27:54+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0011s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0006s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:54' AND `promote_end_date` >= '2017-03-26 22:27:54' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0006s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538474') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0013s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('13','2','','1','2788.00') [ RunTime:0.0004s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0004s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+
+[ 2017-03-26T22:27:54+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0010s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0008s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:54' AND `promote_end_date` >= '2017-03-26 22:27:54' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0007s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0008s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538474') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0008s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('14','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0003s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+
+[ 2017-03-26T22:27:54+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0009s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:54' AND `promote_end_date` >= '2017-03-26 22:27:54' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0007s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538474') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0019s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('15','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0004s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+
+[ 2017-03-26T22:27:54+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0010s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0008s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:54' AND `promote_end_date` >= '2017-03-26 22:27:54' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0009s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0009s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538474') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0008s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('16','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0004s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-03-26T22:27:54+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0008s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:54' AND `promote_end_date` >= '2017-03-26 22:27:54' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0007s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0006s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538474') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0006s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('17','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0004s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-03-26T22:27:55+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0011s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0007s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:54' AND `promote_end_date` >= '2017-03-26 22:27:54' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0006s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538474') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0008s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('18','2','','1','2788.00') [ RunTime:0.0004s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0004s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000721s ]
+
+[ 2017-03-26T22:27:55+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002353s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0011s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0007s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:55' AND `promote_end_date` >= '2017-03-26 22:27:55' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0005s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538475') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0013s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('19','2','','1','2788.00') [ RunTime:0.0002s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0003s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+
+[ 2017-03-26T22:27:55+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0013s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0007s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:55' AND `promote_end_date` >= '2017-03-26 22:27:55' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0006s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538475') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0006s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('20','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0003s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-03-26T22:27:55+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0006s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:55' AND `promote_end_date` >= '2017-03-26 22:27:55' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0008s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0008s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538475') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0006s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('21','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0003s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+
+[ 2017-03-26T22:27:55+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0012s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0008s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:55' AND `promote_end_date` >= '2017-03-26 22:27:55' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0008s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0008s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538475') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0007s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('22','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0004s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-03-26T22:27:55+08:00 ] 127.0.0.1 /index.php/Home/Order/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with that of Think\Model::_before_insert() E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_order` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with that of Think\Model::add() E:\amp\www\www.0211.com\Application\Home\Model\CartModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `s11_cart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0011s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsAttrModel
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0006s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `s11_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `s11_goods` WHERE `id` = '2' AND `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:27:55' AND `promote_end_date` >= '2017-03-26 22:27:55' AND `is_on_sale` = '是' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `s11_member_price` WHERE `level_id` = '2' AND `goods_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 33 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `s11_goods_number` [ RunTime:0.0006s ]
+SQL: SELECT `goods_number` FROM `s11_goods_number` WHERE `goods_id` = 2 AND `goods_attr_id` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `s11_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('吴英雷','上海','东城区','西三旗','西三旗','13344441111','2788','1','1490538475') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_order_goods` [ RunTime:0.0006s ]
+SQL: INSERT INTO `s11_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('23','2','','1','2788.00') [ RunTime:0.0003s ]
+SQL: UPDATE `s11_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 2 AND `goods_attr_id` = '' [ RunTime:0.0004s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 89 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\amp\www\www.0211.com\Application\Admin\Model\OrderModel.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-03-26T22:35:18+08:00 ] 127.0.0.1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`promote_price` FROM `s11_goods` WHERE `promote_price` > 0 AND `promote_start_date` <= '2017-03-26 22:35:18' AND `promote_end_date` >= '2017-03-26 22:35:18' AND `is_on_sale` = '是' LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `s11_goods` WHERE `is_new` = '是' AND `is_on_sale` = '是' ORDER BY sort_num LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `s11_goods` WHERE `is_hot` = '是' AND `is_on_sale` = '是' ORDER BY sort_num LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `s11_goods` WHERE `is_best` = '是' AND `is_on_sale` = '是' ORDER BY sort_num LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: children E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2017-03-26T22:35:19+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+

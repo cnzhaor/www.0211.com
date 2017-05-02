@@ -1,0 +1,23 @@
+<?php
+return array(
+	//'配置项'=>'配置值'
+	/* 数据库配置 */
+    'DB_TYPE'               =>  'mysqli',     // 数据库类型
+    'DB_HOST'               =>  'localhost', // 服务器地址
+    'DB_NAME'               =>  'shop0211',          // 数据库名
+    'DB_USER'               =>  'root',      // 用户名
+    'DB_PWD'                =>  '123',          // 密码
+    'DB_PORT'               =>  '3306',        // 端口
+    'DB_PREFIX'             =>  's11_',    // 数据库表前缀
+    'DB_CHARSET'            =>  'utf8',      // 数据库编码默认采用utf8
+    'DEFAULT_FILTER'        =>  'trim,htmlspecialchars', // trim去掉前后的空格 默认参数过滤方法 用于I函数...
+	/*	 图片相关配置   */
+	'IMAGE_CONFIG'	=>array(
+		'maxSize'	=>	1024 *1024,
+		'exts'		=>	array('jpg', 'gif', 'png', 'jpeg'),// 设置附件上传类型
+		'rootPath'	=>	'./Public/Uploads/',//上传文件保存的路径 ->PHP要使用的路径 硬盘路径
+		'viewPath'	=>	'/Public/Uploads/',//显示图片的路径 ->浏览器使用的路径 相对网址根目录
+	),
+    // 显示页面Trace信息
+    'SHOW_PAGE_TRACE' =>false, 
+);

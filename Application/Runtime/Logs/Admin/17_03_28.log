@@ -1,0 +1,403 @@
+[ 2017-03-28T17:11:50+08:00 ] 127.0.0.1 /index.php/Admin/Index/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+
+[ 2017-03-28T17:11:54+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2017-03-28T17:11:54+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2017-03-28T17:11:58+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001055s ]
+
+[ 2017-03-28T17:11:59+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2017-03-28T17:12:02+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `s11_admin` [ RunTime:0.1017s ]
+SQL: SELECT * FROM `s11_admin` WHERE `username` = 'root' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+
+[ 2017-03-28T17:12:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2017-03-28T17:12:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `s11_privilege` [ RunTime:0.0258s ]
+SQL: SELECT * FROM `s11_privilege`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001240s ]
+
+[ 2017-03-28T17:12:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000549s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2017-03-28T17:12:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2017-03-28T17:12:06+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `s11_privilege` [ RunTime:0.0014s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0247s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001368s ]
+
+[ 2017-03-28T17:12:27+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `s11_privilege` [ RunTime:0.0014s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_type` [ RunTime:0.0341s ]
+SQL: SELECT `id`,`type_name` FROM `s11_type`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2017-03-28T17:13:29+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `s11_privilege` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0011s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\amp\www\www.0211.com\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `s11_goods` (`cat_id`,`brand_id`,`goods_name`,`market_price`,`shop_price`,`promote_price`,`promote_start_date`,`promote_end_date`,`is_new`,`is_best`,`is_hot`,`is_floor`,`sort_num`,`goods_desc`,`type_id`,`logo`,`mbig_logo`,`big_logo`,`mid_logo`,`sm_logo`,`addtime`) VALUES ('2','1','没蓝E','1100','1000','0','2017-03-28 17:12:27','2017-03-28 17:12:27','是','否','否','是','100','','0','Goods/2017-03-28/58da2938b5e49.jpg','Goods/2017-03-28/thumb_0_58da2938b5e49.jpg','Goods/2017-03-28/thumb_1_58da2938b5e49.jpg','Goods/2017-03-28/thumb_2_58da2938b5e49.jpg','Goods/2017-03-28/thumb_3_58da2938b5e49.jpg','2017-03-28 17:13:28') [ RunTime:0.1410s ]
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\amp\www\www.0211.com\Application\Admin\Model\GoodsModel.class.php 第 185 行.
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0007s ]
+SQL: INSERT INTO `s11_goods_cat` (`cat_id`,`goods_id`) VALUES ('21','4') [ RunTime:0.0403s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000956s ]
+
+[ 2017-03-28T17:13:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `s11_privilege` [ RunTime:0.0016s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2017-03-28T17:17:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `s11_privilege` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant goods_id - assumed 'goods_id' E:\amp\www\www.0211.com\Application\Admin\Controller\GoodsController.class.php 第 200 行.
+SQL: SELECT `cat_id` FROM `s11_goods_cat` WHERE `goods_id` = '1'  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `s11_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `s11_member_level` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `s11_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `s11_member_price` WHERE `goods_id` = '1'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`mid_pic` FROM `s11_goods_pic` WHERE `goods_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_attribute` [ RunTime:0.0014s ]
+SQL: SELECT a.*,b.attr_value,b.id goods_attr_id FROM s11_attribute a LEFT JOIN s11_goods_attr b ON (a.id=b.attr_id AND b.goods_id=1)  WHERE a.type_id = '3'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: 1 E:\amp\www\www.0211.com\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 177 行.
+SQL: SHOW COLUMNS FROM `s11_type` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`type_name` FROM `s11_type`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2017-03-28T17:17:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `s11_privilege` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `s11_goods_attr` [ RunTime:0.0013s ]
+SQL: UPDATE `s11_goods_attr` SET `attr_value`='金色' WHERE `id` = '81' [ RunTime:0.1908s ]
+SQL: UPDATE `s11_goods_attr` SET `attr_value`='银色' WHERE `id` = '82' [ RunTime:0.0510s ]
+SQL: UPDATE `s11_goods_attr` SET `attr_value`='黑色' WHERE `id` = '83' [ RunTime:0.0332s ]
+SQL: UPDATE `s11_goods_attr` SET `attr_value`='2017-01-01' WHERE `id` = '84' [ RunTime:0.0434s ]
+SQL: UPDATE `s11_goods_attr` SET `attr_value`='20寸' WHERE `id` = '85' [ RunTime:0.0443s ]
+SQL: UPDATE `s11_goods_attr` SET `attr_value`='1200' WHERE `id` = '86' [ RunTime:0.0313s ]
+SQL: UPDATE `s11_goods_attr` SET `attr_value`='500' WHERE `id` = '87' [ RunTime:0.0338s ]
+SQL: SHOW COLUMNS FROM `s11_goods_cat` [ RunTime:0.0010s ]
+SQL: DELETE FROM `s11_goods_cat` WHERE `goods_id` = 1 [ RunTime:0.0533s ]
+SQL: INSERT INTO `s11_goods_cat` (`cat_id`,`goods_id`) VALUES ('21','1') [ RunTime:0.2099s ]
+SQL: UPDATE `s11_goods` SET `cat_id`='2',`brand_id`='3',`goods_name`='小米手机',`market_price`='1999.00',`shop_price`='20000',`is_on_sale`='是',`promote_price`='100.00',`promote_start_date`='2017-03-17 10:28:09',`promote_end_date`='2017-03-23 00:00:00',`is_new`='是',`is_best`='是',`is_hot`='是',`is_floor`='是',`sort_num`='30',`goods_desc`='<p><span style=\"color:#ff0000;\">手机手机手机</span></p><p><span style=\"color:#ff0000;\"></span></p><p><img src=\"http://www.0211.com/Public/umeditor/php/upload/20170322/14901569917603.jpeg\" alt=\"14901569917603.jpeg\" /></p><p><img src=\"http://www.0211.com/Public/umeditor/php/upload/20170322/14901569962540.png\" alt=\"14901569962540.png\" /></p><p><span style=\"color:#ff0000;\"><br /></span><br /></p>',`type_id`='3',`edittime`='2017-03-28 17:17:38' WHERE `id` = 1 [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `s11_member_price` [ RunTime:0.1230s ]
+SQL: DELETE FROM `s11_member_price` WHERE `goods_id` = 1 [ RunTime:0.0182s ]
+SQL: INSERT INTO `s11_member_price` (`price`,`level_id`,`goods_id`) VALUES ('1799','2','1') [ RunTime:0.0350s ]
+SQL: INSERT INTO `s11_member_price` (`price`,`level_id`,`goods_id`) VALUES ('1699','3','1') [ RunTime:0.1551s ]
+SQL: INSERT INTO `s11_member_price` (`price`,`level_id`,`goods_id`) VALUES ('1599','4','1') [ RunTime:0.0329s ]
+SQL: SHOW COLUMNS FROM `s11_goods_pic` [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000663s ]
+
+[ 2017-03-28T17:17:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+SQL: SHOW COLUMNS FROM `s11_privilege` [ RunTime:0.0014s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with that of Think\Model::_before_delete() E:\amp\www\www.0211.com\Application\Admin\Model\CategoryModel.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `s11_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `s11_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `s11_goods` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM s11_goods a LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br>") ext_cat_name FROM s11_goods a LEFT JOIN s11_brand b ON a.brand_id=b.id
+				LEFT JOIN s11_category c ON a.cat_id=c.id
+				LEFT JOIN s11_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN s11_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,15   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `s11_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `s11_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+

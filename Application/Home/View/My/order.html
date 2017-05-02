@@ -1,0 +1,89 @@
+<layout name='Common/layout' />
+
+<!--引入特有的CSS,JS-->
+
+<link rel="stylesheet" href="__PUBLIC__/HOME/style/home.css" type="text/css">
+<link rel="stylesheet" href="__PUBLIC__/HOME/style/order.css" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/HOME/js/home.js"></script>
+
+	
+<!--引入导航条文件-->
+<include file='Common/nav' />
+
+
+	<!-- 页面主体 start -->
+	<div class="main w1210 bc mt10">
+		<div class="crumb w1210">
+			<h2><strong>我的XX </strong><span>> 我的订单</span></h2>
+		</div>
+		
+		<!--引入左侧导航菜单-->
+		<include file='My/menu' />	
+
+		<!-- 右侧内容区域 start -->
+		<div class="content fl ml10">
+			<div class="order_hd">
+				<h3>我的订单</h3>
+				<dl>
+					<dt>便利提醒：</dt>
+					<dd>待付款（<?php echo $data['noPayCount'];?>）</dd>
+				</dl>
+
+			</div>
+
+			<div class="order_bd mt10">
+				<table class="orders">
+					<thead>
+						<tr>
+							<th width="10%">订单号</th>
+							<th width="20%">订单商品</th>
+							<th width="10%">收货人</th>
+							<th width="20%">订单金额</th>
+							<th width="20%">下单时间</th>
+							<th width="10%">订单状态</th>
+							<th width="10%">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+					<?php foreach ($data['data'] as $k=>$v):?>
+						<tr class="tron">
+							<td><a href=""><?php echo $v['id'];?></a></td>
+							<td><a href=""><?php $_arr = explode(',',$v['logo']); foreach ($_arr as $k1=>$v1) showImage($v1);?></a></td>
+							<td><?php echo $v['shr_name'];?></td>
+							<td>￥<?php echo $v['total_price'];?></td>
+							<td><?php echo date('Y-m-d H:i:s',$v['addtime']);?></td>
+							<td>
+							<?php if($v['pay_status'] == '是'):?>
+								已支付
+							<?php else: ?>
+								<?php echo makeAlipayBtn($v['id']);?>
+							<?php endif;?>
+							</td>
+							<td><a href="">查看</a>  
+								<?php if($v['pay_status'] == '否'):?>
+									| <a href="">取消订单</a>
+								<?php endif;?>
+							</td>
+						</tr>
+					<?php endforeach;?>
+					</tbody> 
+					<table>
+						<tr>
+			                <td class="page" align="center" colspan="7">
+			                   <?php echo $data['page']; ?>
+			                </td>
+			            </tr>
+			         </table>
+				</table>
+  			  <!-- 分页结束 --></div>
+		</div>
+		<!-- 右侧内容区域 end -->
+	</div>
+	<!-- 页面主体 end-->
+
+	<div style="clear:both;"></div>
+	
+<!--引入帮助文件-->
+<include file='Common/help' />
+<!--引入行高亮显示一般放在最后-->
+<script type="text/javascript" src="__PUBLIC__/HOME/js/tron.js"></script>

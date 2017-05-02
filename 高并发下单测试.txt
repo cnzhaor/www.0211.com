@@ -1,0 +1,1 @@
+E:\amp\apache2.2\bin\ab.exe -c 20 -n 20 -C "pgv_pvi=1970913280;PHPSESSID=v21p3405opoc2iptalitj6a633" -p E:\amp\www\www.0211.com\post_data.txt -T "application/x-www-form-urlencoded" http://www.0211.com/index.php/Home/Order/add.html

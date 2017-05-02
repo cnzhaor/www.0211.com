@@ -1,0 +1,236 @@
+create database shop0211;
+use shop0211;
+set names utf8;
+
+drop table if exists s11_goods;
+create table s11_goods
+(
+	id mediumint unsigned not null auto_increment comment 'id',
+	goods_name varchar(150) not null comment '商品名称',
+	market_price decimal(10,2) not null comment '市场价格',
+	shop_price decimal(10,2) not null comment '本店价格',
+	goods_desc longtext comment '商品描述',
+	is_on_sale enum('是','否') not null default '是' comment '是否上架',
+	is_delete enum('是','否') not null default '是' comment '是否放在回收站',
+	addtime datetime not null comment '添加时间',
+	edittime datetime comment '修改时间',
+	logo varchar(150) not null default '' comment '原图',
+	sm_logo varchar(150) not null default '' comment '小图',
+	mid_logo varchar(150) not null default '' comment '中图',
+	big_logo varchar(150) not null default '' comment '大图',
+	mbig_logo varchar(150) not null default '' comment '更大图',
+	brand_id mediumint unsigned not null default '0' comment '品牌id',
+	cat_id mediumint unsigned not null default '0' comment '主分类id',
+	type_id mediumint unsigned not null default '0' comment '类型id',
+	promote_price decimal(10,2) not null default '0.00'comment '促销价格',
+	promote_start_date datetime not null comment '促销开始时间',
+	promote_end_date datetime not null comment '促销结束时间',
+	is_new enum('是','否') not null default '否' comment '是否新品',
+	is_hot enum('是','否') not null default '否' comment '是否热卖',
+	is_best enum('是','否') not null default '否' comment '是否精品',
+	primary key (id),
+	key(shop_price),
+	key(addtime),
+	key(is_on_sale),
+	key(brand_id),
+	key(cat_id),
+	key(promote_price),
+	key(promote_start_date),
+	key(promote_end_date),
+	key(is_new),
+	key(is_hot),
+	key(is_best),
+)engine = InnoDB default charset = utf8 comment '商品';
+
+alter table s11_goods add logo varchar(150) not null default '' comment '原图';
+alter table s11_goods add sm_logo varchar(150) not null default '' comment '小图';
+alter table s11_goods add mid_logo varchar(150) not null default '' comment '中图';
+alter table s11_goods add big_logo varchar(150) not null default '' comment '大图';
+alter table s11_goods add mbig_logo varchar(150) not null default '' comment '更大图';
+
+alter table s11_goods add edittime datetime comment '修改时间';
+
+drop table if exists s11_brand;
+create table s11_brand
+(
+	id mediumint unsigned not null auto_increment comment 'id',
+	brand_name varchar(30) not null comment '品牌名称',
+	site_url varchar(150) not null default '' comment '官方网址',
+	logo varchar(150) not null default '' comment '品牌Logo图片',
+	primary key (id)
+)engine=InnoDB default charset=utf8 comment '品牌';
+
+
+drop table if exists s11_member_level;
+create table s11_member_level
+(
+	id mediumint unsigned not null auto_increment comment 'id',
+	level_name varchar(30) not null comment '级别名称',
+	jifen_bottom mediumint unsigned not null comment '积分下限',
+	jifen_top mediumint unsigned not null comment '积分上限',
+	primary key (id)
+)engine=InnoDB default charset=utf8 comment '会员级别';
+
+
+'goods表与member_level表的中间表'
+drop table if exists s11_member_price;
+create table s11_member_price
+(
+	level_id mediumint unsigned not null comment '级别id',
+	goods_id mediumint unsigned not null comment '商品id',
+	price decimal(10,2) not null comment '会员价格',
+	key (level_id),
+	key (goods_id)
+)engine=InnoDB default charset=utf8 comment '会员价格';
+
+
+drop table if exists s11_goods_pic;
+create table s11_goods_pic
+(
+	id mediumint unsigned not null auto_increment comment 'id',
+	pic varchar(150) not null comment '原图',
+	big_pic varchar(150) not null comment '大图',
+	mid_pic varchar(150) not null comment '中图',
+	sm_pic varchar(150) not null comment '小图',
+	goods_id mediumint unsigned not null comment '商品id',
+	primary key (id),
+	key (goods_id)
+)engine=InnoDB default charset=utf8 comment '商品相册';
+
+
+drop table if exists s11_category;
+create table s11_category
+(
+	id mediumint unsigned not null auto_increment comment 'id',
+	parent_id mediumint unsigned not null default '0' comment '上级分类的id,0:顶级分类',
+	cat_name varchar(30) not null comment '分类名称',
+	primary key (id)
+)engine=InnoDB default charset=utf8 comment '分类';
+
+
+INSERT INTO `s11_category` (`id`, `cat_name`, `parent_id`) VALUES
+(1, '家用电器', 0),
+(2, '手机、数码、京东通信', 0),
+(3, '电脑、办公', 0),
+(4, '家居、家具、家装、厨具', 0),
+(5, '男装、女装、内衣、珠宝', 0),
+(6, '个护化妆', 0),
+(21, 'iphone', 2),
+(8, '运动户外', 0),
+(9, '汽车、汽车用品', 0),
+(10, '母婴、玩具乐器', 0),
+(11, '食品、酒类、生鲜、特产', 0),
+(12, '营养保健', 0),
+(13, '图书、音像、电子书', 0),
+(14, '彩票、旅行、充值、票务', 0),
+(15, '理财、众筹、白条、保险', 0),
+(16, '大家电', 1),
+(17, '生活电器', 1),
+(18, '厨房电器', 1),
+(19, '个护健康', 1),
+(20, '五金家装', 1),
+(22, '冰箱', 16);
+
+goods,category的中间表
+drop table if exists s11_goods_cat;
+create table s11_goods_cat
+(
+	goods_id mediumint unsigned not null comment '商品id',
+	cat_id mediumint unsigned not null comment '分类id',
+	key (goods_id),
+	key (cat_id)
+)engine=InnoDB default charset=utf8 comment '商品扩展分类';
+
+drop table if exists s11_type;
+create table s11_type
+(
+	id mediumint unsigned not null auto_increment comment 'id',
+	type_name varchar(30) not null comment '类型名称',
+	primary key (id)
+)engine=InnoDB default charset=utf8 comment '类型';
+
+唯一:单选;可选:多选
+drop table if exists s11_attribute;
+create table s11_attribute
+(
+	id mediumint unsigned not null auto_increment comment 'id',
+	attr_name varchar(30) not null comment '属性名称',
+	attr_type enum ('唯一','可选') not null comment '属性类型',
+	attr_option_values varchar(300) not null default '' comment '属性可选值',
+	type_id mediumint unsigned not null comment '所属类型id',
+	primary key (id),
+	key (type_id)
+)engine=InnoDB default charset=utf8 comment '属性';
+
+关联goods,attribute,相对于把一种商品按照属性分类
+drop table if exists s11_goods_attr;
+create table s11_goods_attr
+(
+	id mediumint unsigned not null auto_increment comment 'id',
+	attr_value varchar(150) not null default '' comment '属性值',
+	attr_id mediumint unsigned not null comment '属性id',
+	goods_id mediumint unsigned not null comment '商品id',
+	primary key (id),
+	key (attr_id),
+	key (goods_id)
+)engine=InnoDB default charset=utf8 comment '商品属性';
+
+drop table if exists s11_goods_number;
+create table s11_goods_number
+(
+	goods_id mediumint unsigned not null comment '商品id',
+	goods_number mediumint unsigned not null default '0' comment '库存',
+	goods_attr_id varchar(150) not null comment '商品属性表的id,如果是多个,就用程序拼成字符串存到这个字段',
+	key (goods_id)
+)engine=InnoDB default charset=utf8 comment '库存';
+
+RBAC权限管理,三个主表两个中间表
+drop table if exists s11_privilege;
+create table s11_privilege
+(
+	id mediumint unsigned not null auto_increment comment 'id',
+	parent_id mediumint unsigned not null default '0' comment '上级权限id',
+	pri_name varchar(30) not null comment '权限名称',
+	module_name varchar(30) not null default '' comment '模块名称',
+	controller_name varchar(30) not null default '' comment '控制器名称',
+	action_name varchar(30) not null default '' comment '方法名称',
+	primary key (id)
+)engine=InnoDB default charset=utf8 comment '权限';
+
+drop table if exists s11_role_pri;
+create table s11_role_pri
+(
+	role_id mediumint unsigned not null comment '权限id',
+	pri_id mediumint unsigned not null  comment '权限id',
+	key (role_id),
+	key (pri_id)
+)engine=InnoDB default charset=utf8 comment '角色权限[中间表]';
+
+drop table if exists s11_role;
+create table s11_role
+(
+	id mediumint unsigned not null auto_increment comment 'id',	
+	role_name varchar(30) not null comment '角色名称',
+	primary key (id)
+)engine=InnoDB default charset=utf8 comment '角色';
+
+
+drop table if exists s11_admin_role;
+create table s11_admin_role
+(
+	admin_id mediumint unsigned not null comment '管理员id',
+	role_id mediumint unsigned not null  comment '角色id',
+	key (admin_id),
+	key (role_id)
+)engine=InnoDB default charset=utf8 comment '管理员角色[中间表]';
+
+drop table if exists s11_admin;
+create table s11_admin
+(
+	id mediumint unsigned not null auto_increment comment 'id',	
+	username varchar(30) not null comment '用户名',
+	password char(32) not null comment '密码',
+	primary key (id)
+)engine=InnoDB default charset=utf8 comment '管理员';
+INSERT INTO s11_admin VALUES(1,'root','21232f297a57a5a743894a0e4a801fc3');
+
