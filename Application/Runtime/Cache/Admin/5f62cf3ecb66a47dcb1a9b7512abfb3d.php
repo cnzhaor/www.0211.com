@@ -132,7 +132,7 @@ body {
                 	<?php endforeach;?>
                 </ul>
             </li>
-        <?php endforeach;?>
+          <?php endforeach;?>
         </ul>
     </div>
     <div id="help-div" style="display:none">

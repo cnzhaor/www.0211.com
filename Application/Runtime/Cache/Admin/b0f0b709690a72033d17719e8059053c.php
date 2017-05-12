@@ -9,10 +9,12 @@
 </head>
 <body>
 <h1>
-    <span class="action-span1"><a href="#">ECSHOP 管理中心</a> </span>
+    <span class="action-span1"><a href="javascript:void(0)">ECSHOP 管理中心</a> </span>
     <span id="search_id" class="action-span1"></span>
     <div style="clear:both"></div>
 </h1>
+
+<!--
 <div class="list-div">
     <table cellspacing='1' cellpadding='3'>
         <tr>
@@ -44,9 +46,12 @@
         </tr>
     </table>
 </div>
+
 <!-- end order statistics -->
 <br />
 <!-- start goods statistics -->
+
+<!--
 <div class="list-div">
     <table cellspacing='1' cellpadding='3'>
         <tr>
@@ -72,9 +77,11 @@
         </tr>
     </table>
 </div>
+-->
 <!-- end order statistics -->
 <br />
 <!-- start system information -->
+<!--
 <div class="list-div">
     <table cellspacing='1' cellpadding='3'>
         <tr>
@@ -121,5 +128,6 @@
 <div id="footer">
 共执行 29 个查询，用时 0.539249 秒，Gzip 已禁用，内存占用 3.502 MB<br />
 版权所有 &copy; 2005-2012 上海商派网络科技有限公司，并保留所有权利。</div>
+-->
 </body>
 </html>

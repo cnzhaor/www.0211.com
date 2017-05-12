@@ -120,13 +120,13 @@
     </div>
     <div id="submenu-div">
         <ul>
-            <li><a href="/testTp" target="_blank">查看网店</a></li>
-            <li><a href="#" target="main-frame">个人设置</a></li>
-            <li style="border-right:none"><a href="#">刷新</a></li>
+            <li><a href="javascript:void(0)" target="main-frame">查看网店</a></li>
+            <li><a href="javascript:void(0)" target="main-frame">个人设置</a></li>
+            <li style="border-right:none"><a href="javascript:void(0)">刷新</a></li>
         </ul>
         <div id="send_info">
-        	您好！<?php echo session('username');?>
-            <a href="#" target="main-frame" class="fix-submenu">清除缓存</a>
+        	欢迎回来，<?=session('username');?>。
+            <a href="<?=delDirAndFile(RUNTIME_PATH);?>" onclick="return confirm('确定清除缓存吗?');" class="fix-submenu">清除缓存</a>
             <a href="<?php echo U('login/logout');?>" onclick="return confirm('确实要退出吗?');" target="_top" class="fix-submenu">退出</a>
         </div>
     </div>
@@ -134,11 +134,11 @@
 <div id="menu-div">
     <ul>
         <li class="fix-spacel">&nbsp;</li>
-        <li><a href="__GROUP__/Index/main" target="main-frame">起始页</a></li>
-        <li><a href="__GROUP__/Goods/goodsList" target="main-frame">商品列表</a></li>
-        <li><a href="__GROUP__/Order/orderList" target="main-frame">订单列表</a></li>
-        <li><a href="__GROUP__/Comment/commentList" target="main-frame">用户评论</a></li>
-        <li><a href="__GROUP__/User/userList" target="main-frame">会员列表</a></li>
+        <li><a href="<?=U('admin/index/main')?>" target="main-frame">起始页</a></li>
+        <li><a href="<?=U('admin/goods/lst')?>" target="main-frame">商品列表</a></li>
+        <li><a href="javascript:void(0)" target="main-frame">订单列表</a></li>
+        <li><a href="javascript:void(0)" target="main-frame">用户评论</a></li>
+        <li><a href="javascript:void(0)" target="main-frame">会员列表</a></li>
         <li class="fix-spacer">&nbsp;</li>
     </ul>
     <br class="clear" />

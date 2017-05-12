@@ -19,5 +19,8 @@ return array(
 		'viewPath'	=>	'/Public/Uploads/',//显示图片的路径 ->浏览器使用的路径 相对网址根目录
 	),
     // 显示页面Trace信息
-    'SHOW_PAGE_TRACE' =>false, 
+    'SHOW_PAGE_TRACE' =>false,
+	//缓存
+//	'TMPL_CACHE_ON' => false,//禁止模板编译缓存
+//	'HTML_CACHE_ON' => false,//禁止静态缓存
 );

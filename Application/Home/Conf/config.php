@@ -7,5 +7,6 @@ return array(
 	'HTML_CACHE_RULES'  =>     array(  // 定义静态缓存规则
 		'index:index'    =>     array('index', '86400'), //首页生成index.shtml一天有效,位置:Html/
 		'index:goods'    =>     array('goods-{id}', '86400'), 
-	)
+	),
+	'SHOW_PAGE_TRACE' =>true,
 );
